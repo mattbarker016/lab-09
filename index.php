@@ -13,25 +13,31 @@
 
 <?php include "includes/header.php"; ?>
 
-<body id= "slide">
+<body>
 
-      <h1>Slideshows are useful!</h1>
+  <div id="slide">
+
+      <h1>A Tour of Cornell</h1>
       <div id="image_container">
         <!-- images taken by Kyle Harms-->
-        <img id="current_img" src="images/tower1.png">
+        <center>
+          <img id="current_img" src="images/tower1.png">
+        </center>
       </div> <!-- end of image_container div -->
 
       <div id="button_container">
-          <button id = "left" onclick="Prev();">Previous</button>
-          <button id = "right" onclick="Next();">Next</button>
+          <button class="slide_button" id="left" onclick="prev();">Previous</button>
+          <button class="slide_button" id="right" onclick="next();">Next</button>
       </div> <!-- end of button_container div -->
 
-    <footer>
-
-    </footer>
-</body>
-</html>
   </div>
+
+
+
 </body>
+
+<footer>
+  <p id="date"></p>
+</footer>
 
 </html>

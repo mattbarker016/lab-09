@@ -2,7 +2,7 @@
 
   <div id="banner">
     <center>
-    	<h1>Lab 9!</h1>
+    	<h1>INFO 1300: Lab 9</h1>
     </center>
   </div>
 

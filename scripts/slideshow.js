@@ -1,11 +1,12 @@
+"use strict";
+
 //variables for Prev() and Next()
 //array of images
 var images = ["tower1.png", "tower2.png", "tower3.png", "tower5.png", "baby-corn-1.jpg"];
 //current image index
 var currentImage = 0;
 
-function Prev() {
-	"use strict";
+function prev() {
 	if (currentImage > 0) {
 		currentImage -= 1;
 		document.getElementById("current_img").src = "images/" + images[currentImage];
@@ -17,8 +18,7 @@ function Prev() {
 	}
 }
 
-function Next() {
-	"use strict";
+function next() {
 	if (currentImage < images.length - 1) {
 		currentImage += 1;
 		document.getElementById("current_img").src = "images/" + images[currentImage];
@@ -31,22 +31,14 @@ function Next() {
 }
 
 
-window.onload = function date() {
-    "use strict";
-    // month variable
-    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        // get date
-        whole_date = new Date(),
-        month_text = months[whole_date.getMonth()],
-        day = whole_date.getDate(),
-        year = whole_date.getFullYear(),
-        // set info for DOM
-        span = document.createElement('span'),
-        text = document.createTextNode(month_text + ' ' + day + ' ' + year),
-        position = document.getElementsByTagName('footer')[0];
-    // put date in footer
-    span.appendChild(text);
-    position.appendChild(span);
+window.onload = function() {
+
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		var date = new Date();
+    var month = months[date.getMonth()];
+    var day = date.getDate();
+    var year = date.getFullYear();
+
+    $("#date").append(month + ' ' + day + ', ' + year);
 
 };
- 
