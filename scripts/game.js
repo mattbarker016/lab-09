@@ -6,7 +6,7 @@ window.onload = function() {
 	function timer() {
 		console.log("timer!");
 		score += 1;
-		$("#score").text("Score: "+score.toString());
+		$("#time").text("Time: "+score.toString());
 	}
 
 	// Manage the Start / Pause button with the timer function.
@@ -48,8 +48,6 @@ window.onload = function() {
 	midY = (minY + maxY) / 2;
 
 	// Initialize starting point for block.
-
-
 
 	$("#catch_me").css("top", midY);
 	$("#catch_me").css("left", midX);

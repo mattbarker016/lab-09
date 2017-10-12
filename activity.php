@@ -2,13 +2,16 @@
 <html>
 
 <head>
+
   <meta charset="UTF-8">
   <title>Block Makeover</title>
+
   <link rel="stylesheet" type="text/css" href="styles/all.css" media="all"/>
-  <!-- Load jQuery from CDN -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Load jQuery script-->
+
   <script src="scripts/activity.js"></script>
+
 </head>
 
 <?php include "includes/header.php"; ?>
@@ -89,10 +92,10 @@
 			<p>I'm a block!</p>
 		</div>
 
-
+		<hr>
 
 		<center>
-			<h3>Now... <a href="game.php">Catch the Block!</a></h3>
+			<h3>To see what else you can do with jQuery, try to <a href="game.php">Catch the Block!</a></h3>
 		</center>
 
 
