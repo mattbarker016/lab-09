@@ -6,7 +6,7 @@ window.onload = function() {
 	function timer() {
 		console.log("timer!");
 		score += 1;
-		$("#score").text("Score: "+score.toString());
+		$("#time").text("Time: "+score.toString());
 	}
 
 	// Manage the Start / Pause button with the timer function.

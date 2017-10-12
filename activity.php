@@ -92,7 +92,7 @@
 
 
 		<center>
-			<h3>Now... <a href="game.php">Catch the Block!</a></h3>
+			<h3>To see what else you can do with jQuery, try to <a href="game.php">Catch the Block!</a></h3>
 		</center>
 
 

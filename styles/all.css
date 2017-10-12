@@ -20,7 +20,7 @@
 }
 
 .block #seven {
-  left: ;
+  left: 0px;
   position: absolute;
 }
 
@@ -35,6 +35,10 @@
 .activity button {
   display: block;
   margin: 10px auto;
+}
+
+.activity hr {
+  margin: 50px auto;
 }
 
 #status {

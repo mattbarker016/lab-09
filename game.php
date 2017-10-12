@@ -23,7 +23,7 @@
 
     <center>
       <button id="start">Start</button>
-      <h2 id="score">Score: 0</h2>
+      <h2 id="time">Time: 0</h2>
     </center>
 
     <div class="container">
