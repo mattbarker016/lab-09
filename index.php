@@ -13,7 +13,7 @@
 
 <?php include "includes/header.php"; ?>
 
-<body>
+<body id= "slide">
 
       <h1>Slideshows are useful!</h1>
       <div id="image_container">
@@ -22,14 +22,14 @@
       </div> <!-- end of image_container div -->
 
       <div id="button_container">
-          <button onclick="Prev();">Previous</button>
-          <button onclick="Next();">Next</button>
+          <button id = "left" onclick="Prev();">Previous</button>
+          <button id = "right" onclick="Next();">Next</button>
       </div> <!-- end of button_container div -->
 
     <footer>
 
     </footer>
-  </body>
+</body>
 </html>
   </div>
 </body>
