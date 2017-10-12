@@ -96,8 +96,14 @@
 
 
 /** Slideshow **/
-
-
+h1{
+  text-align: center;
+}
+#slide{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 
 #nav_bar {
     margin-right: auto;
@@ -126,10 +132,8 @@
 }
 
 #image_container {
-    display: block;
     background: #6E1CFF;
-    width: 25%;
-    padding-left: 5%;
+    padding-left: 26%;
     padding-top: 10px;
     padding-bottom: 5px;
 }
@@ -137,4 +141,29 @@
 #current_img {
   height: 400px;
   width: 225px;
+}
+#button_container{
+  padding-bottom: 50px;
+}
+#left{
+    background-color: #00FFAD; 
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+}
+#right{
+    background-color: #00FFAD; 
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    float: right;
+    font-size: 20px;
+}
+
+footer{
+  font-size: 2em;
+  text-align: center;
+  color: #6E1CFF;
 }
