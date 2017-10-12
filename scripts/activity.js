@@ -1,98 +1,87 @@
 window.onload = function() {
 
-	toggle = true
-	$("#block").dblclick( function() {
+
+
+	// 1. Change the color of the box to blue.
+
+	$("#one").css("background-color", "blue");
+
+
+
+	// 2.  Change the text to, "Well, more of a rectangle, really!".
+
+	$("#two p").text("Well, more of a rectangle, really!");
+
+
+
+	// 3. Increase the width to 300px to let the little block be more expressive. 
+
+	$("#three p").text("Well, more of a rectangle, really!");
+	$("#three").css("width", ($("#three").width() + 300).toString() + "px");
+
+
+
+	// 4. Increase the nerdy block's font by 4px.
+	// Hint: You need to remove "px", add the value, and add "px" back.
+	// Hint: parseInt() might help you...
+
+	new_font_size = parseInt($("#four").css("font-size")) - 4;
+	$("#four").css("font-size", new_font_size + "px");
+
+
+
+	// 5. On a click, banish the smart-aleck block by slowly, intimately, fading it out of existence.
+
+	$("#five").click( function() {
+		$("#five").fadeOut(5000);
+	});
+
+
+
+	// 6. Implement the two button's respective functions.
+
+	$("#button_text").click( function() {
+		$("#status").text($("#six p").text());
+	});
+
+	$("#button_html").click( function() {
+		$("#status").text($("#six p").html());
+	});
+
+
+
+	// 7. Move the block right when mousing over. 
+	// Challenge: Can you move it back when repeated?
+	// Hint: How can you keep track of whether it's left or not? 
+	// Or, whether it's TRUE or FALSE that it's been moved?
+
+	toggle = true;
+	$("#seven").mouseover( function() {
 
 		if (toggle) { 
-			$(this).animate({left: '+=250px'});
+			$("#seven").animate({left: '+=250px'});
 		} else {
-			$(this).animate({left: '-=250px'});
+			$("#seven").animate({left: '-=250px'});
 		}
 
-		toggle = !toggle
+		toggle = !toggle;
 
 	});
 
-	colors = ["red", "orange", "green", "blue", "purple", "brown", "black"]
+
+
+	// 8. Challenge: Change the block's color whenever you press DOWN on a KEY.
+
+	colors = ["orange", "green", "blue", "purple", "red"]
 	index = 0
 
-	$("#block").mouseenter( function() {
+	$(document).keydown( function(e) {
 
-		$(this).css("background-color", colors[index])
+		$("#eight").css("background-color", colors[index])
 		index = (index + 1) % colors.length
 
 	});
 
-	/**
-		Question 1 - Changing font-size
-		10 points
 
-		Change the font size of the pokemon weight and pokemon item elements
-		based on the selected value of #font-select
-
-		target the .item and .weight classes
-	**/
-	$("#font-select").change(function() {
-		// START CODE Q1
-
-		var font = $("#font-select").val() + "px"
-		$(".item").css('font-size', font);
-		$(".weight").css('font-size', font);
-
-		// END CODE Q1
-
-	});
-
-	/**
-		Question 2 - Show/Hide
-		10 points
-
-		Show/hide the all sprite images when the box is checked/unchecked.
-
-		Do not use jQuery show / hide functions, cell text formatting needs to be retained.
-
-		In other words, the sprites should not be 'visible'.
-	**/
-	$("#hide-sprites").change(function() {
-		// START CODE Q2
-
-		if ($(".cell img").css('visibility') == "visible") {
-			$(".cell img").css('visibility', "hidden");
-		} else {
-			$(".cell img").css('visibility', "visible");
-		}
-
-		// END CODE Q2
-
-	})
-
-	/**
-		Question 3 - Adding a font-size
-		15 points
-
-		Add a font size to the select menu if the input is a number.
-		You must check that it is a number.
-		Look at the DOM to make sure you append the value to the right drop down menu.
-		Also validate that it is between 5 - 22, otherwise ignore it completely
-
-		Clear the add-font text field once the accepted number has been appended to
-		the right drop down menu
-
-		It is OK if the resulting selections do not display in order
-	**/
-	$("#add-font-size").click(function(){
-		// START CODE Q3
-
-		var number = $("#fontSizeInput").val();
-		
-		if ($.isNumeric(number) && number >= 5 && number <= 22) {
-			var html = "<option value="+number+">"+number+" pixels</option>";
-			$("#font-select").append(html);
-			$("#fontSizeInput").val("");
-		}
-
-		// END CODE Q3
-
-	});
 
 }

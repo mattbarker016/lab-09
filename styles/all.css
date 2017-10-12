@@ -1,10 +1,58 @@
+/** Activity **/
+
+.block {
+
+  width: 100px;
+  height: 50px;
+
+  background-color: red;
+
+  margin: 0 auto;
+  position: relative;
+
+}
+
+.block p {
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  pointer-events: none;
+}
+
+.block #seven {
+  left: ;
+  position: absolute;
+}
+
+.activity h3 {
+  margin: 50px auto;
+}
+
+.activity p {
+  margin: 50px auto;
+}
+
+.activity button {
+  display: block;
+  margin: 10px auto;
+}
+
+#status {
+  text-align: center;
+}
+
+
+
+/** Game **/
+
+
+
 .container {
 
-  margin: 50px;
-  float: none;
+  margin: auto;
 
   width: 800px;
-  height: 600px;
+  height: 500px;
 
   outline: 4px solid black;
 
@@ -12,17 +60,44 @@
 
 }
 
-#block {
+.text_box {
+
+  margin: 50px;
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+#start {
+
+  height: 50px;
+  width: 160px;
+
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+
+}
+
+#catch_me {
 
   position: absolute;
-  top: 50px;
-  left: 58px;
+
+  top: 0px;
+  left: 0px;
+  
   width: 50px;
   height: 50px;
 
   background-color: red;
 
 }
+
+
+
+/** Slideshow **/
+
+
 
 #nav_bar {
     margin-right: auto;
@@ -35,6 +110,11 @@
     font-size: 1.5em;
 }
 
+.nav_span a {
+    text-decoration: none;
+    color: white;
+}
+
 .nav_span {
     margin-right: 2em;
     color: white;
@@ -45,10 +125,6 @@
     color: #ABF7FF;
 }
 
-.nav_span a {
-    text-decoration: none;
-}
-
 #image_container {
     display: block;
     background: #6E1CFF;
@@ -57,7 +133,6 @@
     padding-top: 10px;
     padding-bottom: 5px;
 }
-
 
 #current_img {
   height: 400px;
