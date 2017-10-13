@@ -26,8 +26,8 @@
       </div> <!-- end of image_container div -->
 
       <div id="button_container">
-          <button class="slide_button" id="left" onclick="prev();">Previous</button>
-          <button class="slide_button" id="right" onclick="next();">Next</button>
+          <button class="slide_button" id="left" >Previous</button>
+          <button class="slide_button" id="right" >Next</button>
       </div> <!-- end of button_container div -->
 
   </div>
