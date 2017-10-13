@@ -31,12 +31,11 @@ window.onload = function() {
 	});
 
 
-	    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		var newDate = new Date();
-	    var month = months[newDate.getMonth()];
-	    var day = newDate.getDate();
-	    var year = newDate.getFullYear();
-
-    $("#date").append(month + ' ' + day + ', ' + year);
+	var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	var newDate = new Date();
+	var month = months[newDate.getMonth()];
+	var day = newDate.getDate();
+	var year = newDate.getFullYear();
+	$("#date").append(month + ' ' + day + ', ' + year);
 
 };
